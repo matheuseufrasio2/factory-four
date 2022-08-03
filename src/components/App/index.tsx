@@ -10,7 +10,9 @@ export function App() {
   const api = useApiNames();
   useEffect(() => {
     api.callEndPoints();
-    setInterval(() => api.callEndPoints(), 5000);
+    setInterval(() => {
+      api.callEndPoints();
+    }, 15000); // change this to change the request frequency(in milisseconds)
   }, []);
 
   return (
