@@ -27,10 +27,7 @@ export function useApiNames() {
     // accounts
     axios
       .get<ResponseProps>(`https://api.factoryfour.com/${apiNames.accounts}/health/status`)
-      .then((res) => {
-        console.log({ data: res.data });
-        setAccounts(res.data);
-      })
+      .then((res) => setAccounts(res.data))
       .catch(() => setAccounts({ success: false, message: 'error' }));
 
     // assets

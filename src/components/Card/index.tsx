@@ -17,7 +17,6 @@ type Props = {
 }
 
 export function Card({ dataInfo, apiName }: Props) {
-  console.log({ dataInfo });
   return (
     <Container isSuccess={dataInfo.success}>
       <h1>{apiName}</h1>
