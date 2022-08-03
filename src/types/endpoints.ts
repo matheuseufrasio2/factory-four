@@ -1,0 +1,21 @@
+/* eslint-disable no-unused-vars */
+export const apiNames = {
+  accounts: 'accounts',
+  assets: 'assets',
+  customers: 'customers',
+  datapoints: 'datapoints',
+  devices: 'devices',
+  documents: 'documents',
+  forms: 'forms',
+  invites: 'invites',
+  media: 'media',
+  messages: 'messages',
+  namespaces: 'namespaces',
+  orders: 'orders',
+  patients: 'patients',
+  relationships: 'relationships',
+  rules: 'rules',
+  templates: 'templates',
+  users: 'users',
+  workflows: 'workflows',
+};
