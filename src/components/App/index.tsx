@@ -8,13 +8,7 @@ export function App() {
   const api = useApiNames();
   useEffect(() => {
     api.callEndPoints();
-    try {
-      setInterval(async () => {
-        api.callEndPoints();
-      }, 15000); // You can change this value in MILISSECONDS to change the request interval.
-    } catch (e) {
-      console.log(e);
-    }
+    setInterval(() => api.callEndPoints(), 5000);
   }, []);
 
   return (
