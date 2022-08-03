@@ -4,18 +4,20 @@ import {
 } from './styles';
 
 export type ResponseProps = {
-  success: boolean;
-  message: string;
   hostname: string;
+  message: string;
+  success: boolean;
   time: number;
+  version: string;
 }
 
 type Props = {
-  dataInfo: ResponseProps;
+  dataInfo: any;
   apiName: string;
 }
 
 export function Card({ dataInfo, apiName }: Props) {
+  console.log({ dataInfo });
   return (
     <Container isSuccess={dataInfo.success}>
       <h1>{apiName}</h1>
